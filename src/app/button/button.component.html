@@ -1,3 +1,9 @@
-<p>
-  button works!
-</p>
+<pre>
+  Model via JsonPipe: {{checkModel | json}}
+</pre>
+
+<div class="btn-group">
+  <label class="btn btn-primary" [(ngModel)]="checkModel.left" btnCheckbox>Left</label>
+  <label class="btn btn-primary" [(ngModel)]="checkModel.middle" btnCheckbox>Middle</label>
+  <label class="btn btn-primary" [(ngModel)]="checkModel.right" btnCheckbox>Right</label>
+</div>
