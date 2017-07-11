@@ -1,3 +1,12 @@
+<button type="button" class="btn btn-primary" popover="Vivamus sagittis lacus vel">
+  Live demo
+</button>
+
 <p>
-  popover works!
+  <span popover="Hello there! I was triggered manually" triggers="" #pop="bs-popover">
+    This text has attached popover
+  </span>
 </p>
+
+<button type="button" class="btn btn-success" (click)="pop.show()">Show</button>
+<button type="button" class="btn btn-warning" (click)="pop.hide()">Hide</button>

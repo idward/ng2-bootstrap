@@ -7,6 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   checkModel:Object = {left: false, middle: true, right: false};
+  radioModel:string = 'Right';
 
   constructor() {
   }

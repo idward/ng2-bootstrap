@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from "@angular/forms";
 import {Routes, RouterModule} from '@angular/router';
-import {AlertModule, ButtonsModule} from "ngx-bootstrap";
+import {AlertModule, ButtonsModule, ModalModule, PopoverModule} from "ngx-bootstrap";
 
 import {AlertComponent} from "../alert/alert.component";
 import {ButtonComponent} from "../button/button.component";
@@ -22,7 +22,9 @@ const routes:Routes = [
     FormsModule,
     RouterModule.forRoot(routes),
     AlertModule.forRoot(),
-    ButtonsModule.forRoot()
+    ButtonsModule.forRoot(),
+    ModalModule.forRoot(),
+    PopoverModule.forRoot()
   ],
   exports: [RouterModule],
   declarations: [AlertComponent, ButtonComponent, ModalComponent, PopoverComponent]
